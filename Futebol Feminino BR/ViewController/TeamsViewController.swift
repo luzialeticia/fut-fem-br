@@ -8,6 +8,12 @@
 import UIKit
 
 class TeamsViewController: UIViewController {
+    let teams = [Team(name: "Paysandu", initials: "PAY", division: "A2", state: "PA", logo: ""),
+                 Team(name: "Corinthians", initials: "COR", division: "A1", state: "SP", logo: "")]
+    lazy var tableView: UITableView = {
+        let tableView = UITableView(frame: .zero)
+        return tableView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
